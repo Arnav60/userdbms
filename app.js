@@ -37,6 +37,7 @@ app.post('/users/add', function(req, res){
         name : req.body.name,
         }
         console.log(newUser);
+        console.log(newUser);
 });    
     
     })
