@@ -1,0 +1,22 @@
+<% include partials/header %>
+<h1>Add users</h1>
+<form method = "POST", action="/users/add">
+    <label>Name</label><br>
+    <input type = "text", name="name">
+    <br>
+    <label>id</label><br>
+    <input type = "number", name ="id">
+    <br>
+    <input type = "submit", value="Submit">
+
+</form>
+<h1><%= title %></h1>
+<ul>
+    <% users.forEach(function(u){ %>
+        <li><%= u.id %></li>
+        <li><%= u.name %></li>
+   <% }) %>
+</ul>
+<% include partials/footer %>
+
+
